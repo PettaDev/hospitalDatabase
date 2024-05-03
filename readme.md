@@ -7,10 +7,13 @@ proposta pelo professor Gabriel Augusto.</p>
 <h2>🚀 Começando</h2>
 
 ### 📋 Parte 01
+
+
 ```
 Diagrama de Entidade-Relacionamento
 ```
 </br>
 
-<img src="/assets/imgs/Diagrama.png">
-
+<div align="center">
+  <img src="/assets/imgs/Diagrama.png" width="500px" align="center">
+</div>
