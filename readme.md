@@ -17,12 +17,13 @@ Diagrama de Entidade-Relacionamento
 
 ## 🌎 Entidades
 
-* Consulta *  **Entidade Principal**
-* Paciente
-* Médico
-* Convênio
-* Receita
+* Consulta  ```Entidade Principal```
 * Especialização
+* Médico
+* Receita
+* Paciente
+* Convênio
+
 
 
 <div align="center">
