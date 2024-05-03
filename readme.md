@@ -12,5 +12,5 @@ Diagrama de Entidade-Relacionamento
 ```
 </br>
 
-<img src="/assets/imgs/Diagrama">
+<img src="/assets/imgs/Diagrama.png">
 
