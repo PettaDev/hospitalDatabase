@@ -26,6 +26,6 @@ Diagrama de Entidade-Relacionamento
 
 <div align="center">
   <img src="/assets/imgs/Diagrama.png" width="500px" align="center">
-  <h5 align="center">Criatividade Momento</h5>
+  <h5 align="center">Momento Criatividade </h5>
   <img src="/assets/imgs/CriatividadeMomento.png" width="500px" align="center">
 </div>
