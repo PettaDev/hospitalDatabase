@@ -14,6 +14,16 @@ Diagrama de Entidade-Relacionamento
 ```
 </br>
 
+
+## 🌎 Entidades
+* Paciente;
+* Médico;
+* Consulta;
+* Convênio;
+* Receita;
+* Especialização;
+
+
 <div align="center">
   <img src="/assets/imgs/Diagrama.png" width="500px" align="center">
 </div>
