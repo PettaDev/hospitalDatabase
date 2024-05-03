@@ -1,7 +1,7 @@
 <h1 align="center">Hospital</h1>
 
 
-<p align="center">Atividade utilizando diagram de Entidade-Relaciomaneto e MySQL, </br>
+<p align="center">Atividade utilizando diagrama de Entidade-Relaciomaneto e MySQL, </br>
 proposta pelo professor Gabriel Augusto.</p>
 </br>
 <h2>🚀 Começando</h2>
