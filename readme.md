@@ -41,5 +41,5 @@ proposta pelo professor Gabriel Augusto.</p>
 * Tipo_do_Quarto
 
 <div align="center">
-  <img src="/assets/imgs/Hospital_database.png" width="500px" align="center">
+  <img src="/assets/imgs/.png" width="500px" align="center">
 </div>
