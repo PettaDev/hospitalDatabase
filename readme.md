@@ -8,14 +8,12 @@ proposta pelo professor Gabriel Augusto.</p>
 
 ### 📋 Parte 01
 
+>Diagrama de Entidade-Relacionamento (simples)
 
-```
-Diagrama de Entidade-Relacionamento
-```
 </br>
 
 
-## 🌎 Entidades
+## 🙎🏻‍♂️ Entidades
 
 * Consulta  ```Entidade Principal```
 * Especialização
@@ -29,3 +27,15 @@ Diagrama de Entidade-Relacionamento
 <div align="center">
   <img src="/assets/imgs/Diagrama.png" width="500px" align="center">
 </div>
+
+
+### 📋 Parte 02
+
+## 🙎🏻‍♂️ Entidades
+
+* Internação  ```Entidade Principal```
+* Paciente
+* Médico
+* Enfermeiro(a)
+* Quarto
+* Tipo_do_Quarto
