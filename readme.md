@@ -39,3 +39,7 @@ proposta pelo professor Gabriel Augusto.</p>
 * Enfermeiro(a)
 * Quarto
 * Tipo_do_Quarto
+
+<div align="center">
+  <img src="/assets/imgs/Diagrama.png" width="500px" align="center">
+</div>
