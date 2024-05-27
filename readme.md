@@ -42,4 +42,5 @@ proposta pelo professor Gabriel Augusto.</p>
 
 <div align="center">
   <img src="/assets/imgs/Hospital_database.png" width="500px" align="center">
+  <img src="/assets/imgs/tabela002.png" width="500px" align="center">
 </div>
