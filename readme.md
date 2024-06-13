@@ -10,6 +10,8 @@ proposta pelo professor Gabriel Augusto.</p>
  <img src="https://skillicons.dev/icons?i=mysql" />
 </div>
 
+<hr>
+
 - [x] Parte 001
 - [x] Parte 002
 - [ ] Parte 003
