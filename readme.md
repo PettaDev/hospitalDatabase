@@ -1,9 +1,16 @@
-<h1 align="center">Hospital</h1>
+<h1 align="center">Hospital </h1>
 
-
-<p align="center">Atividade utilizando diagrama de Entidade-Relaciomaneto e MySQL, </br>
+<p align="center">Atividade de <strong>Banco de Dados</strong>
+  </br>
 proposta pelo professor Gabriel Augusto.</p>
 </br>
+
+<p align="center">⚒️ <strong> Management Systems - MySQL </strong> ⚒️</p>
+<div align="center">
+ <img src="https://skillicons.dev/icons?i=mysql" />
+</div>
+
+
 <h2>🚀 Começando</h2>
 
 ### 📋 Parte 01
