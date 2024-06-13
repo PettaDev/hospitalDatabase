@@ -38,7 +38,7 @@ proposta pelo professor Gabriel Augusto.</p>
 * Médico
 * Enfermeiro(a)
 * Quarto
-* Tipo_do_Quarto
+* TipoQuarto
 
 <div align="center">
   <img src="/assets/imgs/Hospital_database.png" width="500px" align="center">
