@@ -50,5 +50,6 @@ proposta pelo professor Gabriel Augusto.</p>
 
 ### Hospital Database em manuntenção!
 
-> Tabelas parte 01, não disponível</br>
-
+> Parte 03</br>
+> Parte 04</br>
+> Parte 05</br>
