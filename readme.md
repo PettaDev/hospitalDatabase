@@ -10,6 +10,12 @@ proposta pelo professor Gabriel Augusto.</p>
  <img src="https://skillicons.dev/icons?i=mysql" />
 </div>
 
+- [x] Parte 001
+- [x] Parte 002
+- [ ] Parte 003
+- [ ] Parte 004
+- [ ] Parte 005
+
 
 <h2>🚀 Começando</h2>
 
@@ -55,7 +61,7 @@ proposta pelo professor Gabriel Augusto.</p>
 
 ## 🚧 Cuidado Obras! 🚧 
 
-### Hospital Database em manuntenção!
+### Hospital em manuntenção!
 
 > Parte 03</br>
 > Parte 04</br>
