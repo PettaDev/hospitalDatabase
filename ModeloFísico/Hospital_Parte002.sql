@@ -5,37 +5,35 @@ default collate utf8mb4_general_ci;
 
 USE HOSPITAL;
 
-SHOW TABLES;
-
-CREATE TABLE pacientes(
-    paciente_id INT PRIMARY KEY auto_increment,
-    nome VARCHAR(255),
-    cpf VARCHAR(255),
-    data_nascimento DATE,
-    convenio_id INT,
-    foreign key (convenio_id) references convenios(convenio_id)
-)default charset = utf8mb4 engine = InnoDB;
-
-
-CREATE TABLE medicos(
-    medico_id INT PRIMARY KEY auto_increment,
-    nome varchar(255),
-    cpf varchar(11) UNIQUE,
-    crm varchar(12) UNIQUE,
-    especializacao_id INT,
-    FOREIGN KEY (especializacao_id) REFERENCES especializacoes (especializacao_id)
-)default charset = utf8mb4 engine = InnoDB;
-
-CREATE TABLE especializacoes(
-    especializacao_id INT PRIMARY KEY,
-    nome VARCHAR(255)
-)default charset = utf8mb4 engine = InnoDB;
 
 CREATE TABLE convenios(
     convenio_id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(255),
-    cnpj VARCHAR(14),
-    tempo_carencia INT
+    cnpj VARCHAR(18),
+    tempo_carencia DATETIME
+)default charset = utf8mb4 engine = InnoDB;
+
+CREATE TABLE pacientes(
+		paciente_id INT PRIMARY KEY auto_increment,
+		nome VARCHAR(255),
+		cpf VARCHAR(11),
+		data_nascimento DATE,
+    convenio_id INT,
+    foreign key (convenio_id) references convenios(convenio_id)
+)default charset = utf8mb4 engine = InnoDB;
+
+CREATE TABLE especializacoes(
+    especializacao_id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255)
+)default charset = utf8mb4 engine = InnoDB;
+
+CREATE TABLE medicos(
+    medico_id INT PRIMARY KEY auto_increment,
+    nome varchar(255),
+    cpf varchar(11) ,
+    crm varchar(12) ,
+    especializacao_id INT,
+    FOREIGN KEY (especializacao_id) REFERENCES especializacoes (especializacao_id)
 )default charset = utf8mb4 engine = InnoDB;
 
 
@@ -61,6 +59,13 @@ CREATE TABLE receitas(
     FOREIGN KEY (medico_id) REFERENCES medicos(medico_id)
 )default charset = utf8mb4 engine = InnoDB;
 
+CREATE TABLE tipos_quartos(
+	tipoq_id INT PRIMARY KEY AUTO_INCREMENT,
+    tipo VARCHAR(255),
+    valor_diaria INT,
+    descricao VARCHAR(255)
+)default charset = utf8mb4 engine = InnoDB;
+
 CREATE TABLE quartos(
     quarto_id INT PRIMARY KEY AUTO_INCREMENT,
     numero INT,
@@ -70,12 +75,12 @@ CREATE TABLE quartos(
     FOREIGN KEY (tipoq_id) REFERENCES tipos_quartos(tipoq_id)
 )default charset = utf8mb4 engine = InnoDB;
 
-CREATE TABLE tipos_quartos(
-	tipoq_id INT PRIMARY KEY AUTO_INCREMENT,
-    tipo VARCHAR(255),
-    valor_diaria INT,
-    descricao VARCHAR(255)
+CREATE TABLE enfermeiros(
+    enfermeiro_id INT PRIMARY KEY AUTO_INCREMENT,
+    quarto_id INT,
+    FOREIGN KEY (quarto_id) REFERENCES quartos(quarto_id)
 )default charset = utf8mb4 engine = InnoDB;
+
 
 CREATE TABLE internacoes(
     internacao_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -87,10 +92,4 @@ CREATE TABLE internacoes(
     FOREIGN KEY (quarto_id) REFERENCES quartos(quarto_id),
     FOREIGN KEY (paciente_id) REFERENCES pacientes(paciente_id),
 	FOREIGN KEY (enfermeiro_id) REFERENCES enfermeiros(enfermeiro_id)
-)default charset = utf8mb4 engine = InnoDB;
-
-CREATE TABLE enfermeiros(
-    enfermeiro_id INT PRIMARY KEY AUTO_INCREMENT,
-    quarto_id INT,
-    FOREIGN KEY (quarto_id) REFERENCES quartos(quarto_id)
 )default charset = utf8mb4 engine = InnoDB;
