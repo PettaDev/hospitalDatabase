@@ -5,7 +5,6 @@ default collate utf8mb4_general_ci;
 
 USE HOSPITAL;
 
-
 CREATE TABLE convenios(
     convenio_id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(255),
@@ -14,10 +13,10 @@ CREATE TABLE convenios(
 )default charset = utf8mb4 engine = InnoDB;
 
 CREATE TABLE pacientes(
-		paciente_id INT PRIMARY KEY auto_increment,
-		nome VARCHAR(255),
-		cpf VARCHAR(11),
-		data_nascimento DATE,
+	paciente_id INT PRIMARY KEY auto_increment,
+	nome VARCHAR(255),
+	cpf VARCHAR(11),
+	data_nascimento DATE,
     convenio_id INT,
     foreign key (convenio_id) references convenios(convenio_id)
 )default charset = utf8mb4 engine = InnoDB;
@@ -44,9 +43,11 @@ CREATE TABLE consultas(
     convenio_id INT,
     especializacao_id INT,
     paciente_id INT,
+    receita_id INT,
     FOREIGN KEY (medico_id) REFERENCES medicos(medico_id),
     FOREIGN KEY (convenio_id) REFERENCES convenios(convenio_id),
     FOREIGN KEY (especializacao_id) REFERENCES especializacoes(especializacao_id),
+    FOREIGN KEY (receita_id) REFERENCES receitas(receita_id),
     FOREIGN KEY (paciente_id) REFERENCES pacientes(paciente_id)
 )default charset = utf8mb4 engine = InnoDB;
 

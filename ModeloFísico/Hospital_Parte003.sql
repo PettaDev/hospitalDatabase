@@ -11,6 +11,8 @@ INSERT INTO medicos(nome, cpf, crm, especializacao_id) VALUES
 ('Laura Mariana Santos Oliveira', 88888888888, 54321, 2),
 ('Matheus Gabriel Pereira Silva', 99999999999, 98765, 3);
 
+
+
 #Ao menos sete especialidades 
 #(considere a afirmação de que “entre as especialidades há pediatria, clínica geral, gastrenterologia e dermatologia”).
 INSERT INTO especializacoes(nome) VALUES
@@ -21,6 +23,8 @@ INSERT INTO especializacoes(nome) VALUES
 ('Cardiologia'),
 ('Ortopedia'),
 ('Oftalmologia');
+
+
 
 #Inclua ao menos 15 pacientes.
 INSERT INTO pacientes(nome, cpf, data_nascimento, convenio_id) VALUES
