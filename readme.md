@@ -14,7 +14,7 @@ proposta pelo professor Gabriel Augusto.</p>
 
 - [x] [Parte 001](https://docs.google.com/forms/d/e/1FAIpQLScqaaDHsvBJtwtjq6i53MPmS3MgRVuXr3k1usRoXcvzXSovpA/viewform)
 - [x] [Parte 002](https://docs.google.com/forms/d/e/1FAIpQLSc0JqnliAt1yqo1jR5FoL2jFLcMIhqPbFnfKtaXCGG1vTyz4A/viewform)
-- [ ] [Parte 003](https://docs.google.com/forms/d/e/1FAIpQLSeeRrb9hCgdtazE4I2OyAmqniuRA0UYsrzAXMIfO2dILXnI3w/viewform)
+- [x] [Parte 003](https://docs.google.com/forms/d/e/1FAIpQLSeeRrb9hCgdtazE4I2OyAmqniuRA0UYsrzAXMIfO2dILXnI3w/viewform)
 - [ ] [Parte 004](https://docs.google.com/forms/d/e/1FAIpQLSeNaneDYB6F4RbF39kSxMdlh2jimmc69ZjV7rUOLf6UylcMUg/viewform)
 - [ ] [Parte 005](https://docs.google.com/forms/d/e/1FAIpQLSemyH1eNh4tp63R8FUudOCOm9amBQ2N3sSgB4t6jr3TygnnAA/viewform)
 
