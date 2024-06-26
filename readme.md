@@ -45,6 +45,7 @@ proposta pelo professor Gabriel Augusto.</p>
 
 
 ### 📋 Parte 02
+>Modelo Lógico
 
 ## 🙎🏻‍♂️ Entidades
 
