@@ -66,6 +66,5 @@ proposta pelo professor Gabriel Augusto.</p>
 
 ### Hospital em manuntenção!
 
-> Parte 03</br>
 > Parte 04</br>
 > Parte 05</br>
