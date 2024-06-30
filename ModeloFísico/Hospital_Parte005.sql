@@ -8,6 +8,9 @@
 
 # Todos os dados das internações que tiveram data de alta maior que a data prevista para a alta.
 
+	
+ALTER TABLE internacoes CHANGE data_entrada data_alta DATE;
+ALTER TABLE internacoes CHANGE data_saida data_prevista_alta DATE;
   SELECT * FROM internacoes
 	  WHERE  data_prevista_alta < data_alta;
 
