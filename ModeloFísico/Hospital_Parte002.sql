@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS HOSPITAL
+CREATE DATABASE IF NOT EXISTS hospital
 DEFAULT CHARACTER SET utf8mb4
 DEFAULT COLLATE utf8mb4_general_ci;
 
-USE HOSPITAL;
+USE hospital;
 
 CREATE TABLE convenios(
     convenio_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -15,8 +15,7 @@ CREATE TABLE pacientes(
     paciente_id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(255),
     cpf VARCHAR(11),
-    data_nascimento DATE,
-    convenio_id INT
+    data_nascimento DATE
 ) DEFAULT CHARSET = utf8mb4 ENGINE = InnoDB;
 
 CREATE TABLE especializacoes(
@@ -38,13 +37,13 @@ CREATE TABLE consultas(
     medico_id INT,
     convenio_id INT,
     especializacao_id INT,
-    paciente_id INT
+    paciente_id INT,
+    receita_id INT
 ) DEFAULT CHARSET = utf8mb4 ENGINE = InnoDB;
 
 CREATE TABLE receitas(
     receita_id INT PRIMARY KEY AUTO_INCREMENT,
-    descricao VARCHAR(255),
-    consulta_id INT
+    descricao VARCHAR(255)
 ) DEFAULT CHARSET = utf8mb4 ENGINE = InnoDB;
 
 CREATE TABLE tipos_quartos(
@@ -76,8 +75,6 @@ CREATE TABLE enfermeiros(
 ) DEFAULT CHARSET = utf8mb4 ENGINE = InnoDB;
 
 -- Adicionar Foreign Keys usando ALTER TABLE
-ALTER TABLE pacientes
-    ADD CONSTRAINT fk_pacientes_convenios FOREIGN KEY (convenio_id) REFERENCES convenios(convenio_id);
 
 ALTER TABLE medicos
     ADD CONSTRAINT fk_medicos_especializacoes FOREIGN KEY (especializacao_id) REFERENCES especializacoes(especializacao_id);
@@ -87,9 +84,6 @@ ALTER TABLE consultas
     ADD CONSTRAINT fk_consultas_convenios FOREIGN KEY (convenio_id) REFERENCES convenios(convenio_id),
     ADD CONSTRAINT fk_consultas_especializacoes FOREIGN KEY (especializacao_id) REFERENCES especializacoes(especializacao_id),
     ADD CONSTRAINT fk_consultas_pacientes FOREIGN KEY (paciente_id) REFERENCES pacientes(paciente_id);
-
-ALTER TABLE receitas
-    ADD CONSTRAINT fk_receitas_consultas FOREIGN KEY (consulta_id) REFERENCES consultas(consulta_id);
 
 ALTER TABLE quartos
     ADD CONSTRAINT fk_quartos_pacientes FOREIGN KEY (paciente_id) REFERENCES pacientes(paciente_id),
@@ -101,3 +95,6 @@ ALTER TABLE internacoes
 
 ALTER TABLE enfermeiros
     ADD CONSTRAINT fk_enfermeiros_internacoes FOREIGN KEY (internacao_id) REFERENCES internacoes(internacao_id);
+
+ALTER TABLE consultas 
+	ADD CONSTRAINT fk_consultas_receitas FOREIGN KEY (receita_id) REFERENCES receitas(receita_id);
