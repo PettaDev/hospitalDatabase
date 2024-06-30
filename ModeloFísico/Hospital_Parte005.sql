@@ -1,6 +1,15 @@
 # Todos os dados e o valor médio das consultas do ano de 2020 e das que foram feitas sob convênio.
 
+  SELECT *,
+	  AVG(consultas.valor) AS valor_medio
+	  FROM consultas
+	  WHERE YEAR(data_hora) = 2020
+	  AND convenio_id IS NOT NULL;
+
 # Todos os dados das internações que tiveram data de alta maior que a data prevista para a alta.
+
+  SELECT * FROM internacoes
+	  WHERE  data_prevista_alta < data_alta;
 
 # Receituário completo da primeira consulta registrada com receituário associado.
 
