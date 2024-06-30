@@ -34,6 +34,7 @@ CREATE TABLE medicos(
 CREATE TABLE consultas(
     consulta_id INT PRIMARY KEY AUTO_INCREMENT,
     data_hora DATETIME,
+    valor INT,
     medico_id INT,
     convenio_id INT,
     especializacao_id INT,
@@ -97,4 +98,4 @@ ALTER TABLE enfermeiros
     ADD CONSTRAINT fk_enfermeiros_internacoes FOREIGN KEY (internacao_id) REFERENCES internacoes(internacao_id);
 
 ALTER TABLE consultas 
-	ADD CONSTRAINT fk_consultas_receitas FOREIGN KEY (receita_id) REFERENCES receitas(receita_id);
+    ADD CONSTRAINT fk_consultas_receitas FOREIGN KEY (receita_id) REFERENCES receitas(receita_id);
